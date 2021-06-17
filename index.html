@@ -22,6 +22,7 @@ header {
   color: white;
 }
 
+  
 /* Create two columns/boxes that floats next to each other */
 nav {
   float: left;
@@ -57,7 +58,7 @@ footer {
   position: absolute;
   bottom: 0; 
   width: 100%; 
-  height: 2.5rem; 
+  height: 10%; 
   background-color: #0B88CF;
   padding: 10px;
   text-align: center;
@@ -75,10 +76,44 @@ footer {
 </head>
  
 <body>
+      
  
-<header>
-  <h2>Machine Learning for Primary Care (ML4PC): NeurIPs 2021 Workshop Proposal </h2>
-</header>
+/* <header> */
+/*  <h2>Machine Learning for Primary Care (ML4PC): NeurIPs 2021 Workshop Proposal </h2> */
+/* </header> */
+  
+  
+  
+ <header> 
+<section class="example">
+  <div class="container">
+    <css-doodle>
+      :doodle {
+        @grid: 10 / 100vmax;
+        background: midnightblue;
+      }
+      @shape: cross;
+      background: hsla(
+        calc(300 - @index() * 5),
+        60%, 70%, @rand(.8)
+      );
+      transform:
+        scale(@rand(.2, 1.2))
+        translate(
+          @rand(-50%, 50%), @rand(-20%, 20%)
+        );
+    </css-doodle>    
+  </div>
+  <div class="sample-content">
+    <h1>Machine Learning for Primary Care (ML4PC): NeurIPs 2021 Workshop Proposal</h1>
+  </div>
+</section>
+</header>   
+  
+  
+  
+  
+  
 
 <section>
   <nav>
@@ -105,22 +140,22 @@ footer {
       
       
      <a id="Schedule" > 
-     <h3>Schedule</h3>
+     <h2>Schedule</h2>
      <p> Add schedule here with Zoom links. </p>
      </a>
       
      <a id="Speakers" > 
-     <h3>Invited Speakers</h3>
+     <h2>Invited Speakers</h2>
      <p> Full speaker bios and headshots. </p>
      </a>
     
      <a id="Contributed" > 
-     <h3>Contributed Research</h3>
+     <h2>Contributed Research</h2>
      <p> Links to short papers, recorded talks, and bios for spotlight paper speakers. </p>
      </a>
       
       <a id="Organizers"> 
-      <h3> Organizing team </h3>
+      <h2> Organizing team </h2>
         <p> Full bios and headshots here </p>
      </a>
     
